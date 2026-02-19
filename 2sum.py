@@ -1,3 +1,10 @@
-a = 1
-b = 1
-print(a+b)
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        seen = {}  # Tạo 1 dictionary để lưu các giá trị đã duyệt
+        for i, num in enumerate(nums):
+            complement = target - num  # Tính giá trị còn thiếu để đạt target
+            if complement in seen:  # Nếu giá trị còn thiếu đã xuất hiện
+                return [seen[complement], i]  # Trả về cặp chỉ số
+            seen[num] = i  # Lưu giá trị hiện tại vào dictionary
+        
