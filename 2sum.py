@@ -6,5 +6,4 @@ class Solution(object):
             complement = target - num 
             if complement in seen:  # Nếu giá trị còn thiếu đã xuất hiện
                 return [seen[complement], i]  # Trả về cặp chỉ số
-            seen[num] = i  # Lưu giá trị hiện tại vào dictionary
-        
+            seen[num] = i  
