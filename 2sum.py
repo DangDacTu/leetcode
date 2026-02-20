@@ -4,6 +4,6 @@ class Solution(object):
         seen = {} 
         for i, num in enumerate(nums):
             complement = target - num 
-            if complement in seen:  # Nếu giá trị còn thiếu đã xuất hiện
+            if complement in seen:  
                 return [seen[complement], i]  # Trả về cặp chỉ số
             seen[num] = i  
