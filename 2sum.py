@@ -1,7 +1,7 @@
 
 class Solution(object):
     def twoSum(self, nums, target):
-        seen = {}  # Tạo 1 dictionary để lưu các giá trị đã duyệt
+        seen = {} 
         for i, num in enumerate(nums):
             complement = target - num  # Tính giá trị còn thiếu để đạt target
             if complement in seen:  # Nếu giá trị còn thiếu đã xuất hiện
